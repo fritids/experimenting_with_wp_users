@@ -68,18 +68,18 @@
 	}
 
 
-	add_filter( 'map_meta_cap' , function ( $caps , $cap , $user , $args ) {
-
-		if ( $cap === 'create_projects' ) {
-			$caps = array( 'create_projects' );
-		}
-
-		if ( $cap === 'edit_projects' ) {
-			$caps = array( 'edit_projects' );
-		}
-
-		return $caps;
-	}, 10 , 4);
+//	add_filter( 'map_meta_cap' , function ( $caps , $cap , $user , $args ) {
+//
+//		if ( $cap === 'create_projects' ) {
+//			$caps = array( 'create_projects' );
+//		}
+//
+//		if ( $cap === 'edit_projects' ) {
+//			$caps = array( 'edit_projects' );
+//		}
+//
+//		return $caps;
+//	}, 10 , 4);
 
 
 	add_filter( 'map_meta_cap', 'my_map_meta_cap', 10, 4 );
